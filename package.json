@@ -1,0 +1,24 @@
+{
+  "name": "offroad-balancer-homepage",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/dev-clean.cjs",
+    "dev:stable": "node scripts/dev-stable.cjs",
+    "dev:reset": "taskkill /F /IM node.exe >nul 2>nul & node scripts/dev-clean.cjs",
+    "build": "set NEXT_DIST_DIR=.next-build&& next build",
+    "start": "set NEXT_DIST_DIR=.next-build&& next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "20.14.11",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "typescript": "5.5.4"
+  }
+}
